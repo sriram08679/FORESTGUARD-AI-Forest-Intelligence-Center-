@@ -1,0 +1,11 @@
+FORESTGUARD AI — INVESTIGATION REPORT
+================================================
+Report ID: CH-55BCE5E
+Analysis Type: Before / After
+Generated: 2026-08-19 20:53:11
+
+Forest Loss Percent: 33.71
+Risk Score: 33.71
+Risk: HIGH
+
+Recommendation: Priority field verification recommended. Review the source imagery and affected area.

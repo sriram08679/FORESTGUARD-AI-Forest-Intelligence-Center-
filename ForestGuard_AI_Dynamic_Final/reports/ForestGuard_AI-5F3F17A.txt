@@ -1,0 +1,12 @@
+FORESTGUARD AI — INVESTIGATION REPORT
+================================================
+Report ID: AI-5F3F17A
+Analysis Type: AI Detection
+Generated: 2026-08-19 20:45:00
+
+Prediction: DEFORESTATION
+Confidence: 96.67
+Risk: CRITICAL
+Risk Score: 96.67
+
+Recommendation: Priority field verification recommended. Review the source imagery and affected area.

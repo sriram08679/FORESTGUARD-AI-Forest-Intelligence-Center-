@@ -1,0 +1,50 @@
+[
+  {
+    "prediction": "DEFORESTATION",
+    "confidence": 96.67,
+    "risk": "CRITICAL",
+    "risk_score": 96.67,
+    "id": "AI-5F3F17A",
+    "type": "AI Detection",
+    "time": "2026-08-19 20:45:00",
+    "report": "ForestGuard_AI-5F3F17A.txt"
+  },
+  {
+    "prediction": "DEFORESTATION",
+    "confidence": 96.67,
+    "risk": "CRITICAL",
+    "risk_score": 96.67,
+    "id": "AI-D6704FC",
+    "type": "AI Detection",
+    "time": "2026-08-19 20:45:02",
+    "report": "ForestGuard_AI-D6704FC.txt"
+  },
+  {
+    "id": "CH-368F71C",
+    "type": "Before / After",
+    "time": "2026-08-19 20:45:11",
+    "forest_loss_percent": 40.36,
+    "risk_score": 40.36,
+    "risk": "CRITICAL",
+    "report": "ForestGuard_CH-368F71C.txt"
+  },
+  {
+    "prediction": "DEFORESTATION",
+    "confidence": 100.0,
+    "risk": "CRITICAL",
+    "risk_score": 100.0,
+    "id": "AI-92B827F",
+    "type": "AI Detection",
+    "time": "2026-08-19 20:52:30",
+    "report": "ForestGuard_AI-92B827F.txt"
+  },
+  {
+    "id": "CH-55BCE5E",
+    "type": "Before / After",
+    "time": "2026-08-19 20:53:11",
+    "forest_loss_percent": 33.71,
+    "risk_score": 33.71,
+    "risk": "HIGH",
+    "report": "ForestGuard_CH-55BCE5E.txt"
+  }
+]

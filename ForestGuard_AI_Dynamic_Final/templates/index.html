@@ -1,0 +1,64 @@
+
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ForestGuard AI</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<nav>
+ <div class="brand">🌲 <span>ForestGuard</span><small>AI Forest Protection</small></div>
+ <button onclick="show('dash')">⌂ Dashboard</button>
+ <button onclick="show('ai')">◉ AI Detection</button>
+ <button onclick="show('chg')">⇄ Before / After</button>
+ <button onclick="show('analytics')">📈 Analytics</button>
+ <button onclick="show('rep')">▣ Reports</button>
+ <div class="dev">Developed by<br><b>Mr. V. Sri Ram</b></div>
+</nav>
+<main>
+<header><div><span>FORESTGUARD AI</span><h1 id="title">Forest Intelligence Center</h1></div><button onclick="show('dash')">↻ Live View</button></header>
+
+<section id="dash">
+ <div class="forest-hero">
+  <div class="hero-copy">
+   <div class="eyebrow">PROTECT • DETECT • RESPOND</div>
+   <div class="developer-entry">Developed by <b>Mr. V. Sri Ram</b></div>
+   <h2>Watch the forest.<br><em>Spot change early.</em></h2>
+   <p>Run an AI image scan, compare two images, and see the real readings become live trend points.</p>
+   <button class="primary" onclick="show('ai')">Start AI Scan</button>
+   <button onclick="show('analytics')">View Live Trends</button>
+  </div>
+  <div class="orb">🌲<span>AI</span></div>
+ </div>
+ <div class="quick">
+  <button onclick="show('ai')"><strong>◉</strong><span>Inspect an image<small>AI Detection</small></span>→</button>
+  <button onclick="show('chg')"><strong>⇄</strong><span>Compare two dates<small>Change Detection</small></span>→</button>
+  <button onclick="show('analytics')"><strong>📈</strong><span>Watch real readings<small>Dynamic Analytics</small></span>→</button>
+  <button onclick="show('rep')"><strong>▣</strong><span>Review findings<small>Investigation Reports</small></span>→</button>
+ </div>
+ <div class="statusbar"><span>● MONITORING READY</span><span>● AI ENGINE READY</span><span>● LIVE HISTORY CONNECTED</span></div>
+</section>
+
+<section id="ai" class="hide">
+ <h2>AI Detection</h2><p>Upload an image. The actual model result is stored and becomes the next point in the AI risk trend.</p>
+ <div class="panel upload"><input id="img" type="file" accept="image/*"><button class="primary" onclick="predict()">Run AI Scan</button></div>
+ <div id="ao"></div>
+</section>
+
+<section id="chg" class="hide">
+ <h2>Before / After Change Detection</h2><p>Upload two images. The calculated vegetation-loss percentage becomes the next point in the change trend.</p>
+ <div class="panel two"><label>BEFORE<input id="bf" type="file" accept="image/*"></label><label>AFTER<input id="af" type="file" accept="image/*"></label></div>
+ <button class="primary" onclick="changeDetect()">Compare Images</button><div id="co"></div>
+</section>
+
+<section id="analytics" class="hide">
+ <h2>Dynamic Risk Analytics</h2>
+ <p>These are not preset demonstration points. Every point below comes from a completed analysis saved by the application.</p>
+ <div class="panel"><div class="chart-head"><h3>AI Detection Risk Trend</h3><span id="aiMeta"></span></div><canvas id="aiChart"></canvas></div>
+ <div class="panel"><div class="chart-head"><h3>Before / After Risk Trend</h3><span id="changeMeta"></span></div><canvas id="changeChart"></canvas></div>
+ <div class="panel actions"><button onclick="loadAnalytics()">↻ Refresh From Latest Readings</button><button onclick="clearHistory()">Clear Test History</button></div>
+</section>
+
+<section id="rep" class="hide">
+ <h2>Investigation Reports</h2><p>A separate report is automatically created for every AI detection and every before/after comparison.</p>
+ <div class="panel"><button class="primary" onclick="loadReports()">Refresh Reports</button><a href="/csv">Export Results CSV</a><div id="reports"></div></div>
+</section>
+</main>
+<div id="toast"></div><script src="/static/app.js"></script>
+</body></html>
